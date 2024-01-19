@@ -26,9 +26,9 @@ services:
             # use letsencrypt for ssl
             - LETSENCRYPT=true
             # email for ssl
-            - LE_EMAIL=dogmaprotocol@gmail.com
+            - LE_EMAIL=you-domain@gmail.com
             # letsencrypt domains
-            - LE_FQDN=dgma.dev,dev.dgma.dev
+            - LE_FQDN=you-domain.com,sub.you-domain.com
         networks:
             pub-shared-net:
 
