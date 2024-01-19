@@ -1,0 +1,12 @@
+name: Build
+description: Setup and Build Containers locally
+
+runs:
+  using: composite
+  steps:
+    - name: Network Initialization
+      shell: bash
+      run: sh networks.sh
+    - name: Build
+      shell: bash
+      run: docker compose build;

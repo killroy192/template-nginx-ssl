@@ -1,0 +1,38 @@
+version: '3.7'
+
+x-logging: &loggingConf
+  logging:
+    driver: "json-file"
+    options:
+      max-file: "5"
+      max-size: "100m"
+
+services:
+    nginx-router:
+        hostname: nginx-router
+        image: umputun/nginx-le:latest
+        <<: *loggingConf
+        restart: always
+        volumes:
+            - ./etc/ssl:/etc/nginx/ssl
+            - ./etc/service.conf:/etc/nginx/service.conf
+        ports:
+            - "80:80"
+            - "443:443"
+
+        environment:
+            # timezone
+            - TZ=GMT
+            # use letsencrypt for ssl
+            - LETSENCRYPT=true
+            # email for ssl
+            - LE_EMAIL=dogmaprotocol@gmail.com
+            # letsencrypt domains
+            - LE_FQDN=dgma.dev,dev.dgma.dev
+        networks:
+            pub-shared-net:
+
+networks:
+  pub-shared-net:
+    name: pub-shared-net
+    external: true
