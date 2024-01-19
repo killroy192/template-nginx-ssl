@@ -1,4 +1,4 @@
-[![Dry Run](https://github.com/dgma/ngix-ssl/actions/workflows/dry-run.yml/badge.svg)](https://github.com/dgma/ngix-ssl/actions/workflows/dry-run.yml)
+[![Dry Run](https://github.com/killroy192/template-nginx-ssl/actions/workflows/dry-run.yml/badge.svg)](https://github.com/killroy192/template-nginx-ssl/actions/workflows/dry-run.yml)
 
 # TEMPLATE_NGINX_SSL
 
