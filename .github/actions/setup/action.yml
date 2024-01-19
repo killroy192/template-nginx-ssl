@@ -6,7 +6,7 @@ runs:
   steps:
     - name: Network Initialization
       shell: bash
-      run: sh networks.sh
+      run: bash networks.sh
     - name: Build
       shell: bash
       run: docker compose build;
