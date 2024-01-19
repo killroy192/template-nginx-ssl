@@ -13,7 +13,7 @@ Bonus: custom github actions for easy CI\CD rollout.
 
 ## Configuration
 
-1. Fork it 
+1. Generate repo based on template
 2. Identify your routes (domain -> service)
 3. Configure `ect/service.conf` according to your needs. Check `examples` folder for inspiration.
 4. Configure docker-compose.yaml (environment, ports)
