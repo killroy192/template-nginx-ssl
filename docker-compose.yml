@@ -16,6 +16,8 @@ services:
         volumes:
             - ./etc/ssl:/etc/nginx/ssl
             - ./etc/service.conf:/etc/nginx/service.conf
+          # - ./etc/service-example-2.conf:/etc/nginx/service2.conf # more services, should be service*.conf
+          # - ~/static:/var/www/static # volume for static data hosting
         ports:
             - "80:80"
             - "443:443"
