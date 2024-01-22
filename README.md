@@ -1,5 +1,7 @@
 [![Dry Run](https://github.com/killroy192/template-nginx-ssl/actions/workflows/dry-run.yml/badge.svg)](https://github.com/killroy192/template-nginx-ssl/actions/workflows/dry-run.yml)
 
+Project inspired by https://github.com/nginx-le/nginx-le 
+
 # TEMPLATE_NGINX_SSL
 
 Template for simple nginx-le based container for service requests routing.
